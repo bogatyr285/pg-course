@@ -1,4 +1,4 @@
-query:
+## query:
 ```
 explain ANALYZE
 WITH all_place AS (
@@ -29,7 +29,7 @@ ORDER BY r.startdate
 limit 10;
 ```
 
-no indexes
+## no indexes:
 ```
    Functions: 80
    Options: Inlining false, Optimization false, Expressions true, Deforming true
@@ -38,7 +38,7 @@ no indexes
  ```
 
 
-index book.busstation(city):
+## index book.busstation(city):
 ```` 
   Planning Time: 0.562 ms
  JIT:

@@ -1,4 +1,4 @@
-# default postgres
+##  default postgres
 postgres@pg-db:~$ pgbench -c 8 -j 4 -T 10 -f /home/bogatyrev.andrey8/workload.sql -n -U postgres thai
 pgbench (15.12 (Debian 15.12-0+deb12u2))
 transaction type: /home/bogatyrev.andrey8/workload.sql
@@ -14,7 +14,7 @@ latency average = 0.290 ms
 initial connection time = 10.895 ms
 tps = 27580.668378 (without initial connection time)
 
-# pgbouncer default mode: session
+##  pgbouncer default mode: session
 postgres@pg-db:~$ pgbench -c 120 -j 4 -T 10 -f ~/workload.sql -n -U postgres -p 6432 -h 127.0.0.1 thai
 Password:
 pgbench (15.12 (Debian 15.12-0+deb12u2))
@@ -32,7 +32,7 @@ initial connection time = 1151.123 ms
 tps = 11044.478026 (without initial connection time)
 
 
-# pgbouncer: transaction
+##  pgbouncer: transaction
 postgres@pg-db:~$ pgbench -c 120 -j 4 -T 10 -f ~/workload.sql -n -U postgres -p 6432 -h 127.0.0.1 thai
 Password:
 pgbench (15.12 (Debian 15.12-0+deb12u2))
@@ -50,7 +50,7 @@ initial connection time = 1083.215 ms
 tps = 12041.761843 (without initial connection time)
 
 
-# pgbouncer: statement
+##  pgbouncer: statement
 postgres@pg-db:~$ pgbench -c 120 -j 4 -T 10 -f ~/workload.sql -n -U postgres -p 6432 -h 127.0.0.1 thai
 Password:
 pgbench (15.12 (Debian 15.12-0+deb12u2))
@@ -81,3 +81,7 @@ check config
  pkt_buf                   | 4096                                                   | 4096                                                   | no
  pool_mode                 | statement                                              | session                                                | yes
 ```
+
+
+
+
